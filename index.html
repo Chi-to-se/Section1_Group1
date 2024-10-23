@@ -1,46 +1,11 @@
-const express = require('express');
-const path  = require('path');
-const port=3030
-
-/*Create a new Express application*/
-const app = express();
-const router = express.Router();
-router.use(express.json())
-router.use(express.urlencoded({ extended: true }))
-app.use(router)
-
-/*Create a route at ROOT: / */
-router.get('/', (req, res) => {
-    res.send('Hello World! in plain text');
-});
-
-router.get('/signin', (req, res) => {
-    console.log('Request at /sign-in Retrieve a form')
-    res.sendFile(path.join(`${__dirname}/html/sign-in.html`));
-});
-
-
-router.post('/form-submit', (req, res) =>  {
-    console.log(`${req.method}`);
-    console.log(req.body);
-    //const emailaddress = req.body.Email;
-    const timestamp = Date.now();
-
-    console.log(`Form submitted by ${req.body.emailaddress} at ${timestamp}`);
-    res.redirect('/member')
-});
-
-router.get('/member', (req, res) => {
-    res.sendFile(path.join(__dirname, 'html', 'success.html'));
-});
-
-router.use((req, res) => {
-    res.sendFile(path.join(__dirname, 'html', 'error.html'));
-});
-
-
-
-
-app.listen(port, () => {
-    console.log(`Server listening on port: ${port}`);
-});
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> Hello World</title>
+</head>
+<body>
+    <h1> HiHi </h1>
+</body>
+</html>

@@ -97,6 +97,6 @@ export default function Home() {
     //     </a>
     //   </footer>
     // </div>
-    <div className="bg-black"></div>
+    <div className="bg-[#1d1d1d]"></div>
   );
 }

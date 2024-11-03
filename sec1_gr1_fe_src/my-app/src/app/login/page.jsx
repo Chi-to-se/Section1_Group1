@@ -2,7 +2,7 @@
 
 export default function Login() {
   return (
-    <div className="min-h-screen flex items-center justify-center bg-gray-50 py-12 px-4 sm:px-6 lg:px-8 bg-[#1E1E1E]">
+    <div className="min-h-screen flex items-center justify-center py-12 px-4 sm:px-6 lg:px-8 bg-[#1E1E1E]">
       <div className="max-w-md w-full space-y-8 bg-white rounded-lg p-10 px-50 pb-20 ring-8 ring-[#E0E0E0] ring-inset" >
         <div>
           <h2 className="mt-6 text-center text-5xl font-serif text-gray-900 ">

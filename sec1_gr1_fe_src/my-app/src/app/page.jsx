@@ -12,6 +12,7 @@ export default function Home() {
       </div>
 
       {/* Products Section */}
+      <div className="overflow-x-scroll whitespace-nowrap scrollbar-hide px-2">
       <div className="flex items-center justify-center gap-x-5 gap-y-5">
         <div className="text-center">
           <div className="w-[400px] h-[700px] bg-white rounded-sm mb-2"></div>
@@ -28,6 +29,7 @@ export default function Home() {
           <p className="text-lg font-mono space-y-8">Women's Tan Suit $244</p>
         </div>
       </div>
+    </div>
     </div>
 
 
